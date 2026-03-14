@@ -1,0 +1,86 @@
+venv/
+.venv/
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db.DS_Store
+.env
+.vscode/
+dist/
+build/
+*.egg-info/
+```
+
+---
+
+### README.md
+
+```markdown
+# API de Productos
+
+Esta es una API REST desarrollada en Python para la gestión de productos.
+
+## Requisitos Previos
+
+*   Python 3.9 o superior
+*   pip (gestor de paquetes de Python)
+
+## Instalación
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone <url-del-repositorio>
+    cd api-productos
+    ```
+
+2.  **Crear un entorno virtual:**
+    ```bash
+    python -m venv venv
+    ```
+
+3.  **Activar el entorno virtual:**
+    *   En Windows:
+        ```bash
+        .\venv\Scripts\activate
+        ```
+    *   En Linux/macOS:
+        ```bash
+        source venv/bin/activate
+        ```
+
+4.  **Instalar las dependencias:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Configuración
+
+1.  Crea un archivo `.env` en la raíz del proyecto si es necesario para variables de entorno.
+2.  Asegúrate de que la base de datos SQLite se genere automáticamente al ejecutar la aplicación por primera vez.
+
+## Ejecución
+
+Para iniciar el servidor de desarrollo:
+
+```bash
+python main.py
+```
+
+La API estará disponible en `http://127.0.0.1:8000`.
+
+## Documentación de la API
+
+Una vez que el servidor esté corriendo, puedes acceder a la documentación interactiva:
+
+*   **Swagger UI:** `http://127.0.0.1:8000/docs`
+*   **ReDoc:** `http://127.0.0.1:8000/redoc`
+
+## Estructura del Proyecto
+
+*   `main.py`: Punto de entrada de la aplicación.
+*   `models/`: Definición de los modelos de datos.
+*   `routes/`: Definición de los endpoints de la API.
+*   `database/`: Configuración de la conexión a la base de datos.
+
+
